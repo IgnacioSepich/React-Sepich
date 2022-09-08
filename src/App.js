@@ -1,8 +1,15 @@
-import NavBar from "./components/NavBar/NavBar"
+import NavBar from "./components/navBar/NavBar";
+import ItemListContainer from "./containers/itemListContainer/ItemListContainer";
 
 const App = () => {
+
+  const mensaje = "Bienvenido a MGN Consultores";
+
   return (
-    < NavBar />
+    <>
+      < NavBar />
+      < ItemListContainer greeting={mensaje}/>
+    </>
   )
 }
 
