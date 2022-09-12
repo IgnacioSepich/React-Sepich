@@ -1,9 +1,9 @@
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import React from "react";
+
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 const CartWidget = () => {
-    return (
-        <ShoppingCartIcon color="action" sx={{ fontSize: 60 }}/>
-    )
-}
+  return <ShoppingCartIcon color="action" sx={{ fontSize: 60 }} />;
+};
 
-export default CartWidget
+export default CartWidget;

@@ -1,11 +1,10 @@
-header {
+.ItemListContainer__header {
     display: flex;
     justify-content: center;
     padding: 10px;
     color: #1bbc9b;
-    font-weight: lighter;
 }
 
-h2 {
+.ItemListContainer__title {
     font-weight: lighter;
 }

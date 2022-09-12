@@ -1,15 +1,15 @@
-navbar {
+.NavBar__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #1bbc9b;
 }
 
-img {
+.NavBar__img {
     width: 15%;
 }
 
-h1 {
+.NavBar__title {
     color: white;
     font-weight: bold;
 }
