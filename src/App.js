@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from "./components/navBar/NavBar";
 import ItemListContainer from "./containers/itemListContainer/ItemListContainer";
-import ItemCount from "./components/ItemCount";
+/* import ItemCount from "./components/ItemCount"; */
 
 const App = () => {
   const mensaje = "Bienvenido a MGN Consultores";
@@ -16,7 +16,7 @@ const App = () => {
     <>
       <NavBar />
       <ItemListContainer greeting={mensaje} />
-      <ItemCount stock={3} initial={1} onAdd={agregarAlCarrito} />
+{/*       <ItemCount stock={3} initial={1} onAdd={agregarAlCarrito} /> */}
     </>
   );
 };
