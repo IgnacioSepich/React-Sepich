@@ -10,13 +10,11 @@ const App = () => {
     console.log("Compra Exitosa");
   };
 
-  agregarAlCarrito();
-
   return (
     <>
       <NavBar />
       <ItemListContainer greeting={mensaje} />
-{/*       <ItemCount stock={3} initial={1} onAdd={agregarAlCarrito} /> */}
+      {/*       <ItemCount stock={3} initial={1} onAdd={agregarAlCarrito} /> */}
     </>
   );
 };
