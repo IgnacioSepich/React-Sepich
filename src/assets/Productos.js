@@ -3,7 +3,7 @@ export const products = [
     id: 1001,
     title: "Matafuegos Polvo Quimico (1 kg.)",
     risk: "incendio",
-    description: "1 kilogramo",
+    description: "Aísla químicamente los fuegos Clase A, fundiéndose aproximadamente a 177 ºC y cubre la superficie a la que se aplicó, sofoca y rompe la reacción en cadena de los fuegos Clase B y no conduce electricidad hacia el operador.",
     price: 1000,
     pictureUrl:
       "https://www.georgia.com.ar/wp-content/uploads/2016/06/matafuegos_polvo_1kg.jpg",

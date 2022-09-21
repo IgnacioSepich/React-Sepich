@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "./components/navBar/NavBar";
-import ItemListContainer from "./containers/itemListContainer/ItemListContainer";
+/* import ItemListContainer from "./containers/itemListContainer/ItemListContainer"; */
+import ItemDetailContainer from "./containers/itemDetailContainer/ItemDetailContainer";
 /* import ItemCount from "./components/ItemCount"; */
 
 const App = () => {
@@ -13,7 +14,8 @@ const App = () => {
   return (
     <>
       <NavBar />
-      <ItemListContainer greeting={mensaje} />
+      {/*       <ItemListContainer greeting={mensaje} /> */}
+      <ItemDetailContainer />
       {/*       <ItemCount stock={3} initial={1} onAdd={agregarAlCarrito} /> */}
     </>
   );
