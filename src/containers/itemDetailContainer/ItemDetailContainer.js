@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "./ItemDetailContainer.css";
 import ItemDetail from "../../components/itemDetail/ItemDetail";
 import { SpinnerInfinity } from 'spinners-react';
 
