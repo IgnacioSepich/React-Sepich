@@ -16,8 +16,8 @@ const NavBar = () => {
       <Link to="/">
         <img src={logo} alt="logo" className="NavBar__img" />
       </Link>
-      <Categorias categorias={categorias} className="NavBar__categorias" />
-      <Link to="/carrito">
+      <Categorias categorias={categorias} />
+      <Link to="/carrito" >
         <CartWidget />
       </Link>
     </nav>

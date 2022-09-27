@@ -2,7 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1bbc9b;
+    background-color: #1bbc9b; 
+    padding: 0px 30px 0px 0px;
 }
 
 .NavBar__img {
@@ -11,9 +12,8 @@
     display: flex;
 }
 
-.NavBar__title {
-    color: white;
-    font-weight: bold;
+.NavBar__carrito {
+    width: 100px;
 }
 
 a{
