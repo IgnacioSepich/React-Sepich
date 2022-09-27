@@ -6,7 +6,9 @@
 }
 
 .NavBar__img {
-    width: 15%;
+    width: 250px;
+    object-fit: cover;
+    display: flex;
 }
 
 .NavBar__title {
@@ -15,7 +17,7 @@
 }
 
 a{
-    padding: 0px 50px;
+    padding: 0px 0px;
     text-decoration: none;
     color: white;
 }

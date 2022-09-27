@@ -7,7 +7,7 @@ export const products = [
     price: 1000,
     pictureUrl:
       "https://www.georgia.com.ar/wp-content/uploads/2016/06/matafuegos_polvo_1kg.jpg",
-    stock: 100,
+    stock: 5,
   },
   {
     id: 1002,

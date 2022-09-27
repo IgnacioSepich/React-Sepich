@@ -1,6 +1,9 @@
 import React from "react";
+import ItemCount from "../ItemCount";
 
 export const ItemDetail = ({ data }) => {
+  const agregarAlCarrito = () => {};
+
   return (
     <div className="ItemDetail__container">
       <div className="ItemDetail__detail">
@@ -11,6 +14,7 @@ export const ItemDetail = ({ data }) => {
           <h4> $ {data.price} </h4>
         </div>
       </div>
+      <ItemCount stock={data.stock} initial={1} onAdd={agregarAlCarrito} />
     </div>
   );
 };

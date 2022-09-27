@@ -3,19 +3,23 @@ import logo from "../../assets/logo.jpg";
 import CartWidget from "../navBar/cartWidget/CartWidget";
 import "./NavBar.css";
 import { Categorias } from "./sectores/Categorias";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const categorias = [
-    { id: 0, nombre: "Incendio" },
-    { id: 1, nombre: "COVID-19" },
-  ];
+    { id: 0, nombre: "Incendio", route: "/categoria/incendio" },
+    { id: 1, nombre: "COVID-19", route: "/categoria/covid19" },
+  ]
 
   return (
     <nav className="NavBar__container">
-      <img src={logo} alt="logo" className="NavBar__img" />
-      <h1 className="NavBar__title"> MGN Consultores </h1>
+      <Link to="/">
+        <img src={logo} alt="logo" className="NavBar__img" />
+      </Link>
       <Categorias categorias={categorias} className="NavBar__categorias" />
-      <CartWidget />
+      <Link to="/carrito">
+        <CartWidget />
+      </Link>
     </nav>
   );
 };

@@ -1,14 +1,17 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+
+import "./categorias.css";
 
 export const Categorias = ({ categorias }) => {
   return (
-    <nav>
+    <nav className="Categorias">
       {categorias.map((categoria) => {
         return (
-          <a key={categoria.id} href="">
+          <NavLink key={categoria.id} to={categoria.route}>
             {categoria.nombre}
-          </a>
-        );
+          </NavLink>
+        )
       })}
     </nav>
   );
