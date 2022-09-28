@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import ItemCount from "../ItemCount";
+import { Link } from "react-router-dom";
 
 export const ItemDetail = ({ data }) => {
-  const agregarAlCarrito = () => {};
+  const [terminarMiCompra, setTerminarMiCompra] = useState(false);
+
+  const agregarAlCarrito = () => {
+    setTerminarMiCompra(true);
+  };
 
   return (
     <div className="ItemDetail__container">
@@ -14,7 +19,13 @@ export const ItemDetail = ({ data }) => {
           <h4> $ {data.price} </h4>
         </div>
       </div>
-      <ItemCount stock={data.stock} initial={1} onAdd={agregarAlCarrito} />
+      {terminarMiCompra ? (
+        <Link to="/carrito">
+          <button onClick={terminarMiCompra}> Terminar mi compra </button>
+        </Link>
+      ) : (
+        <ItemCount stock={data.stock} initial={1} onAdd={agregarAlCarrito} />
+      )}
     </div>
   );
 };
