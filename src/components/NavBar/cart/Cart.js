@@ -1,9 +1,14 @@
 import React from "react";
+import { useCartContext } from "../../../context/CartContext";
 
-const Cart = () => {
+const Cart = ({ carro }) => {
+    const cart= useCartContext()
+    console.log("estoy en el carrito", cart)
     return (
-        <div> Cart </div>
+        <>
+            <div> Cart </div>
+        </>
     )
 }
 
-export default Cart
+export default Cart;
