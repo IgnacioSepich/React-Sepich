@@ -1,0 +1,18 @@
+.itemCart {
+    display: flex;
+    border-bottom: 1px solid black;
+    max-width: 500px;
+}
+
+.itemCart img {
+    width: 200px;
+    margin-right: 1rem;
+}
+
+.cartVacio {
+    font-weight: bold;
+    color: white;
+    font-size: 50px;
+    background-color: black;
+    text-align: center;
+}
