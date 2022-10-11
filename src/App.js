@@ -24,7 +24,7 @@ const App = () => {
               path="/categoria/:categoriaId"
               element={<ItemListContainer greeting={mensaje} />}
             />
-            <Route path="/detalle/:id" element={<ItemDetailContainer />} />
+            <Route path="/detalle/:detalleId" element={<ItemDetailContainer />} />
             <Route path="/carrito/" element={<Cart />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
