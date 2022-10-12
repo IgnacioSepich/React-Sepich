@@ -1,17 +1,37 @@
 import React from "react";
 import { useCartContext } from "../../../context/CartContext";
 import { Link } from "react-router-dom";
+import { addDoc, collection, getFirestore, serverTimestamp } from "firebase/firestore";
+
 import "./Cart.css";
 
 const Cart = () => {
-  const { cart, totalPrice } = useCartContext();
+  const { cart, totalPrice, clear } = useCartContext();
+
+  const order = {
+    buyer: {
+      name: "Juan Carlos",
+      phone: "54651325",
+      email: "juancarlos123@gmail.com",
+    },
+    items: cart.map((product) => ({ id: product.id, title: product.title, price: product.price, quantity: product.quantity })),
+    date: serverTimestamp (),
+    total: totalPrice (),
+  }
+
+  const handleClick = () => {
+    const db = getFirestore();
+		const ordersCollection = collection(db, "orders");
+		addDoc(ordersCollection, order).then(({ id }) => console.log(id));
+  };
 
   return (
     <>
       {cart.length === 0 ? (
         <>
           <h1 className="cartVacio">
-            No tenes productos en el carrito. Para comprar ingresa <Link to="/"> aca</Link>
+            No tenes productos en el carrito. Para comprar ingresa{" "}
+            <Link to="/"> aca</Link>
           </h1>
         </>
       ) : (
@@ -20,6 +40,8 @@ const Cart = () => {
             <ItemCart key={product.id} product={product} />
           ))}
           <p>TOTAL: ${totalPrice()}</p>
+          <button onClick={handleClick}>Finalizar compra</button>
+          <button onClick={clear}>Vaciar carrito</button>
         </>
       )}
     </>
