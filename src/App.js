@@ -8,7 +8,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CartProvider from "./context/CartContext";
 
 const App = () => {
-  const mensaje = "Bienvenido a MGN Consultores";
 
   return (
     <>
@@ -18,11 +17,11 @@ const App = () => {
           <Routes>
             <Route
               path="/"
-              element={<ItemListContainer greeting={mensaje} />}
+              element={<ItemListContainer /* greeting={mensaje} */ />}
             />
             <Route
               path="/categoria/:categoriaId"
-              element={<ItemListContainer greeting={mensaje} />}
+              element={<ItemListContainer /* greeting={mensaje} */ />}
             />
             <Route path="/detalle/:detalleId" element={<ItemDetailContainer />} />
             <Route path="/carrito/" element={<Cart />} />

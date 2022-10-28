@@ -4,12 +4,13 @@
     align-items: center;
     background-color: #1bbc9b; 
     padding: 0px 30px 0px 0px;
+    height: 13vh;
 }
 
 .NavBar__img {
     width: 250px;
-    object-fit: cover;
     display: flex;
+    max-height: 13vh;
 }
 
 .NavBar__carrito {
@@ -20,6 +21,7 @@ a{
     padding: 0px 0px;
     text-decoration: none;
     color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 
 

@@ -1,0 +1,78 @@
+.ItemCount__count{
+    font-size: 12px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    padding: 20px
+}
+
+.ItemCount__h1{
+    font-weight: 400;
+    color: #575757;
+}
+
+.ItemCount__h2{
+    margin: 0px 0px 0px 10px;
+    font-size: 24px;
+    color: #575757;
+}
+
+.ItemCount__sumar{
+    padding: 5px;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: #1bbc9b;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.ItemCount__sumar:hover{
+    background-color: white;
+    color: #1bbc9b;
+    border: 2px solid #1bbc9b;
+}
+
+.ItemCount__restar{
+    padding: 5px;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: #1bbc9b;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.ItemCount__restar:hover{
+    background-color: white;
+    color: #1bbc9b;
+    border: 2px solid #1bbc9b;
+}
+
+.ItemCount__agregar{
+    padding: 15px;
+    margin: 15px 0px;
+    width: auto;
+    height: auto;
+    border: none;
+    background-color: #1bbc9b;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.ItemCount__agregar:hover{
+    box-shadow: 0px 1px 20px rgb(0,0,0);
+    transition: 1s;
+}

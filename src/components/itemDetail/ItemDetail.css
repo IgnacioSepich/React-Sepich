@@ -1,0 +1,107 @@
+.ItemDetail__container {
+  background: ghostwhite;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(5, auto);
+  gap: 0px 0px;
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: 2rem auto;
+  grid-auto-flow: row;
+  padding: 2rem;
+  grid-template-areas:
+    "img title title"
+    "img price price"
+    "img botton botton"
+    "description description description";
+}
+
+.ItemDetail__title {
+  grid-area: title;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #575757;
+}
+
+.ItemDetail__price {
+  grid-area: price;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  font-weight: 100;
+}
+
+.ItemDetail__stock {
+  grid-area: stock;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.ItemCount__h1 {
+  grid-area: count;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ItemDetail__botton {
+  grid-area: botton;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ItemDetail__description {
+  grid-area: description;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: flex-start;
+  margin: 0px 20px;
+  padding: 30px 10px 0;
+  font-size: 20px;
+  font-weight: 400;
+  color: #575757;
+}
+
+.ItemDetail__image {
+  grid-area: img;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  height: 450px;
+  object-fit: contain;
+  margin-left: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 15px 5px lightgrey;
+}
+
+.ItemDetail__finalizar {
+  padding: 15px;
+  margin: 15px 0px;
+  width: auto;
+  height: auto;
+  border: none;
+  background-color: #1bbc9b;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+
+.ItemDetail__finalizar:hover{
+  box-shadow: 0px 1px 20px rgb(0,0,0);
+  transition: 1s;
+}
