@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/IgnacioSepich/ReactMGN-Sepich/static/css/main.3936b54d.css",
-    "main.js": "/IgnacioSepich/ReactMGN-Sepich/static/js/main.2dafd390.js",
-    "static/media/logo.jpg": "/IgnacioSepich/ReactMGN-Sepich/static/media/logo.8612d2541253c88fbdf0.jpg",
-    "index.html": "/IgnacioSepich/ReactMGN-Sepich/index.html",
-    "main.3936b54d.css.map": "/IgnacioSepich/ReactMGN-Sepich/static/css/main.3936b54d.css.map",
-    "main.2dafd390.js.map": "/IgnacioSepich/ReactMGN-Sepich/static/js/main.2dafd390.js.map"
+    "main.css": "/ReactMGN-Sepich/static/css/main.3936b54d.css",
+    "main.js": "/ReactMGN-Sepich/static/js/main.6e05a2bd.js",
+    "static/media/logo.jpg": "/ReactMGN-Sepich/static/media/logo.8612d2541253c88fbdf0.jpg",
+    "index.html": "/ReactMGN-Sepich/index.html",
+    "main.3936b54d.css.map": "/ReactMGN-Sepich/static/css/main.3936b54d.css.map",
+    "main.6e05a2bd.js.map": "/ReactMGN-Sepich/static/js/main.6e05a2bd.js.map"
   },
   "entrypoints": [
     "static/css/main.3936b54d.css",
-    "static/js/main.2dafd390.js"
+    "static/js/main.6e05a2bd.js"
   ]
 }
