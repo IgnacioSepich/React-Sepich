@@ -13,7 +13,7 @@ const NavBar = () => {
 
   return (
     <nav className="NavBar__container">
-      <Link to="/">
+      <Link to="/ReactMGN-Sepich/">
         <img src={logo} alt="logo" className="NavBar__img" />
       </Link>
       <Categorias categorias={categorias} />
