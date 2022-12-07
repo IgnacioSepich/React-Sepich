@@ -43,7 +43,7 @@ const ItemListContainer = ({ greeting }) => {
         );
       }
     })
-    .finally(() => setLoading(false));
+    .finally(() => setTimeout(() => setLoading(false), 1000));
   }, [categoriaId]);
 
   return (
@@ -52,7 +52,7 @@ const ItemListContainer = ({ greeting }) => {
         {loading ? (
           <SpinnerDotted size={90} thickness={140} speed={100} color="rgba(27, 188, 155, 1)" />
         ) : (
-          <ItemList data={data} />
+          <ItemList data={data} setLoading={setLoading}/>
         )}
       </div>
     </>

@@ -54,7 +54,7 @@ const Cart = () => {
             <button className="Cart__vaciar" onClick={clear}>
               Vaciar carrito
             </button>
-            <Link to="/">
+            <Link to="/ReactMGN-Sepich/">
               <button className="Cart__finalizar" onClick={()=>{handleClick(); clear()}}> 
                 Finalizar compra
               </button>
