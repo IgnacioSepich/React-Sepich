@@ -16,7 +16,7 @@ const App = () => {
           <NavBar />
           <Routes>
             <Route
-              path="/ReactMGN-Sepich"
+              path="/"
               element={<ItemListContainer /* greeting={mensaje} */ />}
             />
             <Route
