@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ReactMGN-Sepich/static/css/main.3936b54d.css",
-    "main.js": "/ReactMGN-Sepich/static/js/main.398021df.js",
+    "main.js": "/ReactMGN-Sepich/static/js/main.a766a5f4.js",
     "static/media/logo.jpg": "/ReactMGN-Sepich/static/media/logo.8612d2541253c88fbdf0.jpg",
     "index.html": "/ReactMGN-Sepich/index.html",
     "main.3936b54d.css.map": "/ReactMGN-Sepich/static/css/main.3936b54d.css.map",
-    "main.398021df.js.map": "/ReactMGN-Sepich/static/js/main.398021df.js.map"
+    "main.a766a5f4.js.map": "/ReactMGN-Sepich/static/js/main.a766a5f4.js.map"
   },
   "entrypoints": [
     "static/css/main.3936b54d.css",
-    "static/js/main.398021df.js"
+    "static/js/main.a766a5f4.js"
   ]
 }
